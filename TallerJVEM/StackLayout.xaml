@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TallerJVEM.StackLayoutPage"
+             Title="Stack Layout">
+    <VerticalStackLayout Padding="20">
+        <Label Text="Primera etiqueta" FontSize="20"/>
+        <Label Text="Segunda etiqueta" FontSize="25"/>
+        <Label Text="Tercera etiqueta" FontSize="30"/>
+        <Button Text="Ir a FlexLayout" Clicked="OnNavigateToFlexLayout"/>
+    </VerticalStackLayout>
+</ContentPage>

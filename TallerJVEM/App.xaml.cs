@@ -1,12 +1,10 @@
-﻿namespace TallerJVEM
-{
-    public partial class App : Application
-    {
-        public App()
-        {
-            InitializeComponent();
+﻿namespace TallerJVEM;
 
-            MainPage = new AppShell();
-        }
+public partial class App : Application
+{
+    public App()
+    {
+        InitializeComponent();
+        MainPage = new NavigationPage(new MainPage());
     }
 }

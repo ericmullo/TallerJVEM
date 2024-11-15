@@ -9,7 +9,7 @@ public partial class paginaprincipal : ContentPage
 
     private void Boton2_Clicked(object sender, EventArgs e)
     {
-        Navigation.PopAsync();
+		Navigation.PopAsync();
 
     }
 }

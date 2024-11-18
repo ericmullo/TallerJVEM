@@ -7,47 +7,82 @@
         <BoxView Color="#002366"
                  AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                  AbsoluteLayout.LayoutFlags="All" />
-        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0.5, 0.1, -1, -1"
-                             AbsoluteLayout.LayoutFlags="PositionProportional"
-                             HorizontalOptions="Center" Spacing="10">
-            <Label Text="Liga de Quito"
-                   FontSize="36"
-                   FontAttributes="Bold"
-                   TextColor="White"
-                   HorizontalOptions="Center" />
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="20">
-                <Button Text="Inicio" BackgroundColor="Transparent" TextColor="White" FontSize="18" />
-                <Button Text="Noticias" BackgroundColor="Transparent" TextColor="White" FontSize="18" />
-                <Button Text="Tienda" BackgroundColor="Transparent" TextColor="White" FontSize="18" />
-                <Button Text="Contactos" BackgroundColor="Transparent" TextColor="White" FontSize="18" />
-            </HorizontalStackLayout>
-        </VerticalStackLayout>
-        <VerticalStackLayout AbsoluteLayout.LayoutBounds="0.5, 0.4, -1, -1"
-                             AbsoluteLayout.LayoutFlags="PositionProportional"
-                             HorizontalOptions="Center" Spacing="15">
-            <Label Text="¿ERES HINCHA O ERES LIGUISTA?"
-                   FontSize="26"
-                   FontAttributes="Bold"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center" />
-            <Label Text="¡Apoya, abónate y extiende tu legado como parte de la familia alba!"
-                   FontSize="20"
-                   TextColor="White"
-                   HorizontalTextAlignment="Center" />
-            <Button Text="Descubre más"
-                    BackgroundColor="#FF4500"
-                    TextColor="White"
-                    FontAttributes="Bold"
-                    CornerRadius="10"
-                    WidthRequest="200"
-                    HeightRequest="50" />
-        </VerticalStackLayout>
-        <HorizontalStackLayout AbsoluteLayout.LayoutBounds="0.5, 0.95, -1, -1"
-                                AbsoluteLayout.LayoutFlags="PositionProportional"
-                                HorizontalOptions="Center" Spacing="10">
-            <Button Text="Facebook" BackgroundColor="#3b5998" TextColor="White" FontSize="16" />
-            <Button Text="Twitter" BackgroundColor="#00acee" TextColor="White" FontSize="16" />
-            <Button Text="Instagram" BackgroundColor="#E1306C" TextColor="White" FontSize="16" />
-        </HorizontalStackLayout>
+
+        <!-- ScrollView con desplazamiento vertical -->
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    AbsoluteLayout.LayoutFlags="All">
+            <VerticalStackLayout Padding="20" Spacing="25" HorizontalOptions="Center">
+                <!-- Encabezado principal -->
+                <Label Text="Liga Deportiva Universitaria de Quito"
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Sección central -->
+                <Label Text="¿ERES HINCHA O ERES LIGUISTA?"
+                       FontSize="24"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+                <Label Text="¡Apoya, abónate y extiende tu legado como parte de la familia alba!"
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+                <Button Text="Descubre más"
+                        BackgroundColor="#FF4500"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="10"
+                        WidthRequest="200"
+                        HeightRequest="50"
+                        HorizontalOptions="Center"
+                        Clicked="OnNavigateToGridLayout" />
+
+                <!-- Historia -->
+                <Label Text="Historia de Liga Deportiva Universitaria de Quito"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="La Historia de Liga Deportiva Universitaria de Quito se remonta a finales de 1918 y principios de 1919..."
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Disputa sus encuentros de local en el Estadio Rodrigo Paz Delgado, que posee un aforo completo para 55.000 personas..."
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Su tradicional rival futbolístico es Sociedad Deportiva Aucas, con quien disputa el Superclásico de Quito..."
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <Label Text="Algunos de los jugadores más importantes que pasaron por sus filas fueron: Polo Carrera, Francisco Bertocchi, Armando Tito Larrea..."
+                       FontSize="18"
+                       TextColor="White"
+                       HorizontalTextAlignment="Center" />
+
+                <!-- Redes sociales en columna -->
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="15">
+                    <Button Text="Facebook" BackgroundColor="#3b5998" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
+                    <Button Text="Twitter" BackgroundColor="#00acee" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
+                    <Button Text="Instagram" BackgroundColor="#E1306C" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
+                </VerticalStackLayout>
+            </VerticalStackLayout>
+        </ScrollView>
+
+        <!-- Botón fijo en la esquina inferior derecha -->
+        <Button Text="Ir a GridLayout"
+                AbsoluteLayout.LayoutBounds="1, 1, 150, 50"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="Red"
+                TextColor="White"
+                FontAttributes="Bold"
+                CornerRadius="10"
+                Clicked="OnNavigateToGridLayout" />
     </AbsoluteLayout>
 </ContentPage>

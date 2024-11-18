@@ -3,62 +3,47 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerJVEM.FlexLayoutPage"
              Title="Flex Layout">
-    <AbsoluteLayout>
-       
-        <BoxView Color="Red"
-                 AbsoluteLayout.LayoutBounds="0, 0, 50, 50"
-                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <BoxView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
-            </BoxView.GestureRecognizers>
-        </BoxView>
+    <VerticalStackLayout BackgroundColor="#1E88E5" Padding="20" Spacing="20">
+        <Label 
+            Text="Bienvenido a FlexLayout" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="30"
+            TextColor="White"
+            FontAttributes="Bold" />
+        <Label 
+            Text="Lista de elementos con imágenes y texto" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="18"
+            TextColor="White" />
 
-        
-        <BoxView Color="Green"
-                 AbsoluteLayout.LayoutBounds="1, 0, 50, 50"
-                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <BoxView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
-            </BoxView.GestureRecognizers>
-        </BoxView>
+        <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+                <HorizontalStackLayout Spacing="10" Padding="10">
+                    <Image Source="image1.jpeg" WidthRequest="50" HeightRequest="50" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Imagen 1" FontSize="18" TextColor="White" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+                <HorizontalStackLayout Spacing="10" Padding="10">
+                    <Image Source="image3.jpg" WidthRequest="50" HeightRequest="50" VerticalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                    <Label Text="Imagen 2" FontSize="18" TextColor="White" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+        </Frame>
 
-       
-        <BoxView Color="Blue"
-                 AbsoluteLayout.LayoutBounds="0, 1, 50, 50"
-                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <BoxView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
-            </BoxView.GestureRecognizers>
-        </BoxView>
-
-       
-        <BoxView Color="Yellow"
-                 AbsoluteLayout.LayoutBounds="1, 1, 50, 50"
-                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <BoxView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
-            </BoxView.GestureRecognizers>
-        </BoxView>
-
-       
-        <BoxView Color="Black"
-                 AbsoluteLayout.LayoutBounds="0.35, 0.35, 50, 50"
-                 AbsoluteLayout.LayoutFlags="PositionProportional">
-            <BoxView.GestureRecognizers>
-                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
-            </BoxView.GestureRecognizers>
-        </BoxView>
-
-        
-        <BoxView Color="Gray"
-                 AbsoluteLayout.LayoutBounds="0.5, 0.5, 150, 150"
-                 AbsoluteLayout.LayoutFlags="PositionProportional" />
-        <Label Text="Eric Mullo y Josue Valencia"
-               AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
-               AbsoluteLayout.LayoutFlags="PositionProportional"
-               HorizontalTextAlignment="Center"
-               VerticalTextAlignment="Center"
-               FontSize="16"
-               TextColor="Black" />
-    </AbsoluteLayout>
+        <Label 
+            Text="TallerJVEM © 2024 | Aprende, Crea y Comparte" 
+            VerticalOptions="End" 
+            HorizontalOptions="Center"
+            FontSize="14"
+            TextColor="White" />
+    </VerticalStackLayout>
 </ContentPage>

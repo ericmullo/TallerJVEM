@@ -7,8 +7,8 @@ public partial class AbsoluteLayoutPage : ContentPage
         InitializeComponent();
     }
 
-    private async void OnNavigateToGridLayout(object sender, EventArgs e)
+    private async void OnNavigateToStore(object sender, EventArgs e)
     {
-        await Navigation.PushAsync(new GridLayoutPage());
+        await DisplayAlert("Navegación", "Redirigiendo a Tienda Liguista...", "OK");
     }
 }

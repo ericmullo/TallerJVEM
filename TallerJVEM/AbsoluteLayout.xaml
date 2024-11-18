@@ -7,82 +7,149 @@
         <BoxView Color="#002366"
                  AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                  AbsoluteLayout.LayoutFlags="All" />
-
-        <!-- ScrollView con desplazamiento vertical -->
         <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
                     AbsoluteLayout.LayoutFlags="All">
             <VerticalStackLayout Padding="20" Spacing="25" HorizontalOptions="Center">
-                <!-- Encabezado principal -->
                 <Label Text="Liga Deportiva Universitaria de Quito"
-                       FontSize="32"
+                       FontSize="36"
                        FontAttributes="Bold"
-                       TextColor="White"
+                       TextColor="#F9FAFB"
                        HorizontalTextAlignment="Center" />
-
-                <!-- Sección central -->
                 <Label Text="¿ERES HINCHA O ERES LIGUISTA?"
-                       FontSize="24"
+                       FontSize="28"
                        FontAttributes="Bold"
-                       TextColor="White"
+                       TextColor="#F9FAFB"
                        HorizontalTextAlignment="Center" />
                 <Label Text="¡Apoya, abónate y extiende tu legado como parte de la familia alba!"
-                       FontSize="18"
-                       TextColor="White"
+                       FontSize="20"
+                       TextColor="#F9FAFB"
                        HorizontalTextAlignment="Center" />
                 <Button Text="Descubre más"
-                        BackgroundColor="#FF4500"
-                        TextColor="White"
+                        BackgroundColor="#F97316"
+                        TextColor="#FFFFFF"
                         FontAttributes="Bold"
-                        CornerRadius="10"
-                        WidthRequest="200"
+                        CornerRadius="12"
+                        WidthRequest="220"
                         HeightRequest="50"
                         HorizontalOptions="Center"
                         Clicked="OnNavigateToGridLayout" />
-
-                <!-- Historia -->
-                <Label Text="Historia de Liga Deportiva Universitaria de Quito"
-                       FontSize="28"
-                       FontAttributes="Bold"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center" />
-
-                <Label Text="La Historia de Liga Deportiva Universitaria de Quito se remonta a finales de 1918 y principios de 1919..."
-                       FontSize="18"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center" />
-
-                <Label Text="Disputa sus encuentros de local en el Estadio Rodrigo Paz Delgado, que posee un aforo completo para 55.000 personas..."
-                       FontSize="18"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center" />
-
-                <Label Text="Su tradicional rival futbolístico es Sociedad Deportiva Aucas, con quien disputa el Superclásico de Quito..."
-                       FontSize="18"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center" />
-
-                <Label Text="Algunos de los jugadores más importantes que pasaron por sus filas fueron: Polo Carrera, Francisco Bertocchi, Armando Tito Larrea..."
-                       FontSize="18"
-                       TextColor="White"
-                       HorizontalTextAlignment="Center" />
-
-                <!-- Redes sociales en columna -->
-                <VerticalStackLayout HorizontalOptions="Center" Spacing="15">
-                    <Button Text="Facebook" BackgroundColor="#3b5998" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
-                    <Button Text="Twitter" BackgroundColor="#00acee" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
-                    <Button Text="Instagram" BackgroundColor="#E1306C" TextColor="White" FontSize="16" WidthRequest="200" Clicked="OnNavigateToGridLayout" />
+                <Frame BackgroundColor="#3B82F6" CornerRadius="15" Padding="15" Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Historia de Liga Deportiva Universitaria de Quito"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="La Historia de Liga Deportiva Universitaria de Quito se remonta a finales de 1918 y principios de 1919 con la instauración del equipo de fútbol amateur de la Universidad Central del Ecuador..."
+                               FontSize="18"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Disputa sus encuentros de local en el Estadio Rodrigo Paz Delgado, que posee un aforo completo para 55.000 personas..."
+                               FontSize="18"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Su tradicional rival futbolístico es Sociedad Deportiva Aucas, con quien disputa el Superclásico de Quito..."
+                               FontSize="18"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="Algunos de los jugadores más importantes que pasaron por sus filas fueron: Polo Carrera, Francisco Bertocchi, Armando Tito Larrea..."
+                               FontSize="18"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame BackgroundColor="#2563EB" CornerRadius="15" Padding="15" Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Logros Destacados"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="🏆 Copa Libertadores: 2008"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="🏆 Copa Sudamericana: 2009, 2023"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="🏆 Recopa Sudamericana: 2009, 2010"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="🏆 12 Títulos Nacionales"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame BackgroundColor="#3B82F6" CornerRadius="15" Padding="15" Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Estadio Rodrigo Paz Delgado"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="🏟️ Capacidad: 55,000 personas"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="📍 Ubicación: Quito, Ecuador"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="El estadio, conocido como 'Casa Blanca', es uno de los más grandes y modernos de Sudamérica."
+                               FontSize="18"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <Frame BackgroundColor="#2563EB" CornerRadius="15" Padding="15" Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Label Text="Contáctanos"
+                               FontSize="28"
+                               FontAttributes="Bold"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="📧 Email: contacto@ligadequito.com"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                        <Label Text="📞 Teléfono: +593 2 123 4567"
+                               FontSize="20"
+                               TextColor="#FFFFFF"
+                               HorizontalTextAlignment="Center" />
+                    </VerticalStackLayout>
+                </Frame>
+                <VerticalStackLayout HorizontalOptions="Center" Spacing="20">
+                    <Button Text="Facebook"
+                            BackgroundColor="#1877F2"
+                            TextColor="#FFFFFF"
+                            FontSize="18"
+                            WidthRequest="250"
+                            Clicked="OnNavigateToGridLayout" />
+                    <Button Text="Twitter"
+                            BackgroundColor="#1DA1F2"
+                            TextColor="#FFFFFF"
+                            FontSize="18"
+                            WidthRequest="250"
+                            Clicked="OnNavigateToGridLayout" />
+                    <Button Text="Instagram"
+                            BackgroundColor="#E1306C"
+                            TextColor="#FFFFFF"
+                            FontSize="18"
+                            WidthRequest="250"
+                            Clicked="OnNavigateToGridLayout" />
                 </VerticalStackLayout>
             </VerticalStackLayout>
         </ScrollView>
-
-        <!-- Botón fijo en la esquina inferior derecha -->
         <Button Text="Ir a GridLayout"
-                AbsoluteLayout.LayoutBounds="1, 1, 150, 50"
+                AbsoluteLayout.LayoutBounds="1, 1, 160, 50"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="Red"
-                TextColor="White"
+                BackgroundColor="#DC2626"
+                TextColor="#FFFFFF"
                 FontAttributes="Bold"
-                CornerRadius="10"
+                CornerRadius="12"
                 Clicked="OnNavigateToGridLayout" />
     </AbsoluteLayout>
 </ContentPage>

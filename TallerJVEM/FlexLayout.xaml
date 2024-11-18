@@ -21,20 +21,20 @@
         <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
             <VerticalStackLayout Spacing="15">
                 <HorizontalStackLayout Spacing="10" Padding="10">
-                    <Image Source="image1.jpeg" WidthRequest="50" HeightRequest="50" VerticalOptions="Center">
+                    <Image Source="image1.jpeg" WidthRequest="100" HeightRequest="100" VerticalOptions="Center">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Imagen 1" FontSize="18" TextColor="White" VerticalOptions="Center" />
+                    <Label Text="Josue Valencia" FontSize="24" TextColor="White" VerticalOptions="Center" />
                 </HorizontalStackLayout>
                 <HorizontalStackLayout Spacing="10" Padding="10">
-                    <Image Source="image3.jpg" WidthRequest="50" HeightRequest="50" VerticalOptions="Center">
+                    <Image Source="image3.jpg" WidthRequest="100" HeightRequest="100" VerticalOptions="Center">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
                         </Image.GestureRecognizers>
                     </Image>
-                    <Label Text="Imagen 2" FontSize="18" TextColor="White" VerticalOptions="Center" />
+                    <Label Text="Eric Mullo" FontSize="24" TextColor="White" VerticalOptions="Center" />
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Frame>

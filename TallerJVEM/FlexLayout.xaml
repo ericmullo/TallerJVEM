@@ -3,11 +3,62 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerJVEM.FlexLayoutPage"
              Title="Flex Layout">
-    <FlexLayout Direction="Column" JustifyContent="Start" AlignItems="Start" Padding="10">
-        <Image Source="image1.png" HeightRequest="50" WidthRequest="50"/>
-        <Label Text="Primera Imagen" VerticalOptions="Center"/>
-        <Image Source="image2.png" HeightRequest="50" WidthRequest="50"/>
-        <Label Text="Segunda Imagen" VerticalOptions="Center"/>
-        <Button Text="Ir a AbsoluteLayout" Clicked="OnNavigateToAbsoluteLayout"/>
-    </FlexLayout>
+    <AbsoluteLayout>
+       
+        <BoxView Color="Red"
+                 AbsoluteLayout.LayoutBounds="0, 0, 50, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        
+        <BoxView Color="Green"
+                 AbsoluteLayout.LayoutBounds="1, 0, 50, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+       
+        <BoxView Color="Blue"
+                 AbsoluteLayout.LayoutBounds="0, 1, 50, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+       
+        <BoxView Color="Yellow"
+                 AbsoluteLayout.LayoutBounds="1, 1, 50, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+       
+        <BoxView Color="Black"
+                 AbsoluteLayout.LayoutBounds="0.35, 0.35, 50, 50"
+                 AbsoluteLayout.LayoutFlags="PositionProportional">
+            <BoxView.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnNavigateToAbsoluteLayout" />
+            </BoxView.GestureRecognizers>
+        </BoxView>
+
+        
+        <BoxView Color="Gray"
+                 AbsoluteLayout.LayoutBounds="0.5, 0.5, 150, 150"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" />
+        <Label Text="Eric Mullo y Josue Valencia"
+               AbsoluteLayout.LayoutBounds="0.5, 0.5, -1, -1"
+               AbsoluteLayout.LayoutFlags="PositionProportional"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               FontSize="16"
+               TextColor="Black" />
+    </AbsoluteLayout>
 </ContentPage>

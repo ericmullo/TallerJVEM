@@ -3,23 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerJVEM.MainPage"
              Title="Main Page">
-    <VerticalStackLayout Padding="20">
+    <VerticalStackLayout BackgroundColor="#1E88E5" Padding="20" Spacing="20">
         <Label 
             Text="Bienvenido a TallerJVEM" 
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            FontSize="24"/>
-        <Button 
-            Text="Ir a GridLayout"
-            Clicked="OnNavigateToGridLayout"/>
-        <Button 
-            Text="Ir a StackLayout"
-            Clicked="OnNavigateToStackLayout"/>
-        <Button 
-            Text="Ir a FlexLayout"
-            Clicked="OnNavigateToFlexLayout"/>
-        <Button 
-            Text="Ir a AbsoluteLayout"
-            Clicked="OnNavigateToAbsoluteLayout"/>
+            FontSize="36"
+            TextColor="White"
+            FontAttributes="Bold" />
+        <Label 
+            Text="Explora nuestros diferentes layouts y aprende con nosotros" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="18"
+            TextColor="White" 
+            HorizontalTextAlignment="Center" />
+        <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+                <Button 
+                    Text="Ir a GridLayout"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="OnNavigateToGridLayout" />
+                <Button 
+                    Text="Ir a StackLayout"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="OnNavigateToStackLayout" />
+                <Button 
+                    Text="Ir a FlexLayout"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="OnNavigateToFlexLayout" />
+                <Button 
+                    Text="Ir a AbsoluteLayout"
+                    BackgroundColor="Transparent"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="OnNavigateToAbsoluteLayout" />
+            </VerticalStackLayout>
+        </Frame>
+        <Label 
+            Text="TallerJVEM © 2024 | Aprende, Crea y Comparte" 
+            VerticalOptions="End" 
+            HorizontalOptions="Center" 
+            FontSize="14"
+            TextColor="White" />
     </VerticalStackLayout>
 </ContentPage>

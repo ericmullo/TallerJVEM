@@ -3,59 +3,53 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerJVEM.StackLayoutPage"
              Title="Stack Layout">
-    <AbsoluteLayout>
-        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
-            <VerticalStackLayout Padding="20" Spacing="10">
-               
-                <Label Text="Colores primarios" FontSize="20" FontAttributes="Bold" />
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Red" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Rojo" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Yellow" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Amarillo" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Blue" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Azul" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
-
-              
-                <Label Text="Colores secundarios" FontSize="20" FontAttributes="Bold" />
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Green" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Verde" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Orange" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Naranja" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
-                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
-                    <HorizontalStackLayout Spacing="10">
-                        <BoxView Color="Purple" WidthRequest="50" HeightRequest="50" />
-                        <Label Text="Violeta" VerticalOptions="Center" FontSize="18" />
-                    </HorizontalStackLayout>
-                </Frame>
+    <VerticalStackLayout BackgroundColor="#1E88E5" Padding="20" Spacing="20">
+        <Label 
+            Text="Bienvenido a TallerJVEM" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="30"
+            TextColor="White"
+            FontAttributes="Bold" />
+        <Label 
+            Text="Explora nuestros diferentes Layouts y aprende con nosotros"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontSize="18"
+            TextColor="White" 
+            HorizontalTextAlignment="Center" />
+        <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
+            <VerticalStackLayout Spacing="15">
+                <Label 
+                    Text="Josue Valencia"
+                    FontSize="24"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center" />
+                <Label 
+                    Text="Eric Mullo"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+                <Label 
+                    Text="Estudiantes de TallerJVEM"
+                    FontSize="16"
+                    TextColor="White"
+                    HorizontalOptions="Center" />
+                <Button 
+                    Text="Ir a FlexLayout"
+                    BackgroundColor="#2196F3"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    CornerRadius="10"
+                    Clicked="OnNavigateToFlexLayout" />
             </VerticalStackLayout>
-        </ScrollView>
-
-      
-        <Button Text="Ir a FlexLayout"
-                AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
-                AbsoluteLayout.LayoutFlags="PositionProportional"
-                BackgroundColor="Purple"
-                TextColor="White"
-                Clicked="OnNavigateToFlexLayout" />
-    </AbsoluteLayout>
+        </Frame>
+        <Label 
+            Text="TallerJVEM © 2024 | Aprende, Crea y Comparte" 
+            VerticalOptions="End" 
+            HorizontalOptions="Center"
+            FontSize="14"
+            TextColor="White" />
+    </VerticalStackLayout>
 </ContentPage>

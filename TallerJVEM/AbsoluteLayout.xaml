@@ -4,9 +4,23 @@
              x:Class="TallerJVEM.AbsoluteLayoutPage"
              Title="Absolute Layout">
     <AbsoluteLayout>
-        <Button Text="Volver a GridLayout"
-                AbsoluteLayout.LayoutBounds="1,1,100,50"
+       
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <VerticalStackLayout Padding="20" Spacing="20">
+                <BoxView Color="Blue" WidthRequest="150" HeightRequest="150" />
+                <BoxView Color="Green" WidthRequest="150" HeightRequest="150" />
+                <BoxView Color="Red" WidthRequest="150" HeightRequest="150" />
+                <BoxView Color="Purple" WidthRequest="150" HeightRequest="150" />
+                <Label Text="Trabajo Josue y Eric" FontSize="20" TextColor="Black" HorizontalOptions="Center" />
+            </VerticalStackLayout>
+        </ScrollView>
+
+        
+        <Button Text="Ir a GridLayout"
+                AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
-                Clicked="OnNavigateToGridLayout"/>
+                BackgroundColor="DarkOrange"
+                TextColor="White"
+                Clicked="OnNavigateToGridLayout" />
     </AbsoluteLayout>
 </ContentPage>

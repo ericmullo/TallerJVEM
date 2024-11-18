@@ -3,10 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TallerJVEM.StackLayoutPage"
              Title="Stack Layout">
-    <VerticalStackLayout Padding="20">
-        <Label Text="Primera etiqueta" FontSize="20"/>
-        <Label Text="Segunda etiqueta" FontSize="25"/>
-        <Label Text="Tercera etiqueta" FontSize="30"/>
-        <Button Text="Ir a FlexLayout" Clicked="OnNavigateToFlexLayout"/>
-    </VerticalStackLayout>
+    <AbsoluteLayout>
+        <ScrollView AbsoluteLayout.LayoutBounds="0, 0, 1, 1" AbsoluteLayout.LayoutFlags="All">
+            <VerticalStackLayout Padding="20" Spacing="10">
+               
+                <Label Text="Colores primarios" FontSize="20" FontAttributes="Bold" />
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Red" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Rojo" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Yellow" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Amarillo" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Blue" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Azul" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+
+              
+                <Label Text="Colores secundarios" FontSize="20" FontAttributes="Bold" />
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Green" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Verde" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Orange" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Naranja" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+                <Frame BorderColor="Black" CornerRadius="5" Padding="5">
+                    <HorizontalStackLayout Spacing="10">
+                        <BoxView Color="Purple" WidthRequest="50" HeightRequest="50" />
+                        <Label Text="Violeta" VerticalOptions="Center" FontSize="18" />
+                    </HorizontalStackLayout>
+                </Frame>
+            </VerticalStackLayout>
+        </ScrollView>
+
+      
+        <Button Text="Ir a FlexLayout"
+                AbsoluteLayout.LayoutBounds="1, 1, -1, -1"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                BackgroundColor="Purple"
+                TextColor="White"
+                Clicked="OnNavigateToFlexLayout" />
+    </AbsoluteLayout>
 </ContentPage>

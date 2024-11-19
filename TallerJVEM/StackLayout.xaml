@@ -8,33 +8,38 @@
             Text="Bienvenido a TallerJVEM" 
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            FontSize="30"
+            FontSize="36"
             TextColor="White"
-            FontAttributes="Bold" />
+            FontAttributes="Bold"
+            FontFamily="Arial" />
         <Label 
             Text="Explora nuestros diferentes Layouts y aprende con nosotros"
             VerticalOptions="Center" 
             HorizontalOptions="Center" 
-            FontSize="18"
+            FontSize="20"
             TextColor="White" 
-            HorizontalTextAlignment="Center" />
+            HorizontalTextAlignment="Center"
+            FontFamily="Verdana" />
         <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
             <VerticalStackLayout Spacing="15">
                 <Label 
                     Text="Josue Valencia"
-                    FontSize="24"
+                    FontSize="28"
                     TextColor="White"
                     FontAttributes="Bold"
+                    FontFamily="Georgia"
                     HorizontalOptions="Center" />
                 <Label 
                     Text="Eric Mullo"
-                    FontSize="20"
+                    FontSize="24"
                     TextColor="White"
+                    FontFamily="Tahoma"
                     HorizontalOptions="Center" />
                 <Label 
                     Text="Estudiantes de TallerJVEM"
-                    FontSize="16"
+                    FontSize="20"
                     TextColor="White"
+                    FontFamily="Courier New"
                     HorizontalOptions="Center" />
                 <Button 
                     Text="Ir a FlexLayout"
@@ -42,6 +47,8 @@
                     TextColor="White"
                     FontAttributes="Bold"
                     CornerRadius="10"
+                    FontSize="18"
+                    FontFamily="Arial"
                     Clicked="OnNavigateToFlexLayout" />
             </VerticalStackLayout>
         </Frame>
@@ -49,7 +56,8 @@
             Text="TallerJVEM © 2024 | Aprende, Crea y Comparte" 
             VerticalOptions="End" 
             HorizontalOptions="Center"
-            FontSize="14"
-            TextColor="White" />
+            FontSize="16"
+            TextColor="White"
+            FontFamily="Times New Roman" />
     </VerticalStackLayout>
 </ContentPage>

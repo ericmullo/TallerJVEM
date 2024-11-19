@@ -11,12 +11,6 @@
             FontSize="30"
             TextColor="White"
             FontAttributes="Bold" />
-        <Label 
-            Text="Lista de elementos con imágenes y texto" 
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" 
-            FontSize="18"
-            TextColor="White" />
 
         <Frame BackgroundColor="#512DA8" CornerRadius="10" Padding="20" HasShadow="True">
             <VerticalStackLayout Spacing="15">
